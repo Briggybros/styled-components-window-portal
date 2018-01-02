@@ -1,4 +1,4 @@
-/* Taken from styled-components/src/models/BrowserStyleSheet.js
+/* Taken from styled-components/src/models/BrowserStyleSheet.js */
 // @flow
 /* eslint-disable no-underscore-dangle */
 /*

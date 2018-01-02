@@ -29,10 +29,10 @@ module.exports = {
             amd: 'react',
         },
     },
-    plugins: [
-        new webpack.optimize.UglifyJsPlugin({
-            compress: true,
-            comments: false,
-        }),
-    ],
+    // plugins: [
+    //     new webpack.optimize.UglifyJsPlugin({
+    //         compress: true,
+    //         comments: false,
+    //     }),
+    // ],
 };

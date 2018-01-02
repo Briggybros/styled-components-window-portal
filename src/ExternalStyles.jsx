@@ -1,22 +1,18 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import { StyleSheetManager } from 'styled-components';
 
-import BrowserStyleSheet from './BrowserStyleSheet';
+import ExternalStyleSheetManager from './ExternalStyleSheetManager';
+import ExternalBrowserStyleSheet from './ExternalBrowserStyleSheet';
 
 const ExternalStyles = ({ children, document }) => {
-    const sheet = BrowserStyleSheet.create(document);
+    const sheet = ExternalBrowserStyleSheet.create(document);
 
     return (
-        <StyleSheetManager
+        <ExternalStyleSheetManager
             sheet={sheet}
         >
             {children}
-        </StyleSheetManager>
+        </ExternalStyleSheetManager>
     );
 };
 
-ExternalStyles.propTypes = {
-    children: PropTypes.node.isRequired,
-    document: PropTypes.object.isRequired, // eslint-disable-line
-};
+export default ExternalStyles;
