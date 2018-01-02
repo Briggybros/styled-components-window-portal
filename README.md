@@ -55,7 +55,7 @@ StyledWindowPortal.defaultProps = {
     onClose: () => {},
 };
 
-export default WindowPortal;
+export default StyledWindowPortal;
 ```
 
 Simply pass a document to the ExternalStyle component, and all children of that component will have their style written to that document.
