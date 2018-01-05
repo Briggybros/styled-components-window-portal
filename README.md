@@ -1,3 +1,5 @@
+Note, this will be made obsolete once [styled-components #1324](https://github.com/styled-components/styled-components/pull/1324) is approved.
+
 # external-styled-components #
 
 A component to use styled-components in a different document.
