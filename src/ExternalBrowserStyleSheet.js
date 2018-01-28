@@ -128,7 +128,8 @@ class BrowserTag {
 
 /* Factory function to separate DOM operations from logical ones */
 export default {
-    create(document) {
+    create(element) {
+        const document = element.ownerDocument;
         const tags = [];
         const names = {};
 
@@ -164,7 +165,7 @@ export default {
             el.setAttribute(SC_ATTR, '');
             el.setAttribute(LOCAL_ATTR, isLocal ? 'true' : 'false');
             if (!document.head) throw new Error('Missing document <head>');
-            document.head.appendChild(el);
+            element.appendChild(el);
             return new BrowserTag(el, isLocal, document);
         };
 

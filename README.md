@@ -1,8 +1,8 @@
-Note, this will be made obsolete once [styled-components #1324](https://github.com/styled-components/styled-components/pull/1324) is approved.
+Note, this will be made obsolete once [styled-components #1324](https://github.com/styled-components/styled-components/pull/1324) is published.
 
 # external-styled-components #
 
-A component to use styled-components in a different document.
+A component to append styled-components output to any node
 
 ## Usage ##
 

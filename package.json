@@ -1,12 +1,16 @@
 {
   "name": "external-styled-components",
-  "version": "1.0.0",
-  "description": "A component to use styled-components in a different document",
-  "main": "dist/external-styled-components.min.js",
+  "version": "1.0.1",
+  "description": "A component to append styled-components output to any node",
+  "main": "lib/external-styled-components.min.js",
   "repository": "git@github.com:Briggybros/external-styled-components.git",
   "author": "Gregory Sims <briggybros.2@googlemail.com>",
   "license": "MIT",
   "private": false,
+  "scripts": {
+    "build": "webpack",
+    "prepublish": "npm run build"
+  },
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-eslint": "^8.1.2",

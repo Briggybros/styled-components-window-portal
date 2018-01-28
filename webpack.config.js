@@ -1,10 +1,9 @@
 const path = require('path');
-const webpack = require('webpack');
 
 module.exports = {
     entry: path.join(__dirname, 'src', 'ExternalStyles.jsx'),
     output: {
-        path: path.join(__dirname, 'dist'),
+        path: path.join(__dirname, 'lib'),
         filename: 'external-styled-components.min.js',
         libraryTarget: 'umd',
     },
@@ -29,10 +28,4 @@ module.exports = {
             amd: 'react',
         },
     },
-    // plugins: [
-    //     new webpack.optimize.UglifyJsPlugin({
-    //         compress: true,
-    //         comments: false,
-    //     }),
-    // ],
 };

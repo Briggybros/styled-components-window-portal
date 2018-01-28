@@ -1,17 +1,17 @@
 import React from 'react';
+import { StyleSheetManager } from 'styled-components';
 
-import ExternalStyleSheetManager from './ExternalStyleSheetManager';
 import ExternalBrowserStyleSheet from './ExternalBrowserStyleSheet';
 
-const ExternalStyles = ({ children, document }) => {
-    const sheet = ExternalBrowserStyleSheet.create(document);
+const ExternalStyles = ({ children, element }) => {
+    const sheet = ExternalBrowserStyleSheet.create(element);
 
     return (
-        <ExternalStyleSheetManager
+        <StyleSheetManager
             sheet={sheet}
         >
             {children}
-        </ExternalStyleSheetManager>
+        </StyleSheetManager>
     );
 };
 
