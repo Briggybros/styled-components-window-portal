@@ -1,6 +1,6 @@
 {
   "name": "external-styled-components",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A component to append styled-components output to any node",
   "main": "lib/external-styled-components.min.js",
   "repository": "git@github.com:Briggybros/external-styled-components.git",
